@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --deep-red: #9e2a2b;
+  --burnt-orange: #f77f00;
+  --warm-yellow: #fcbf49;
+  --dark-green: #386641;
+  --cream: #fdf0d5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family:
+    "Inter",
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
+.texture-bg {
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(247, 127, 0, 0.15), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(56, 102, 65, 0.15), transparent 30%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(158, 42, 43, 0.04) 0px,
+      rgba(158, 42, 43, 0.04) 2px,
+      transparent 2px,
+      transparent 8px
+    );
+}
+
+.decorative-circle {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(0.2px);
+  opacity: 0.28;
+  pointer-events: none;
+}
